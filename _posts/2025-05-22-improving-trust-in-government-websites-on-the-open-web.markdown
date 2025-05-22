@@ -7,11 +7,11 @@ categories:
 
 Impersonating governments is unfortunately a common scam on the internet. Scammers might do it to get people to pay bogus fines, get some sensitive personal information, or even to sell access to otherwise free public services.
 
-It is currently a rather easy scam to run: all they need to do is to setup a website that re-uses the design system of the government they're imitating, host it with a somewhat offical-sounding domain name, and they're good to go. These sites might eventually be taken down or added to the [Safe Browsing](https://safebrowsing.google.com/) blocklist, but they can still do some damage.
+It is currently a rather easy scam to run: all they need to do is to set up a website that re-uses the design system of the government they're imitating, host it with a somewhat offical-sounding domain name, and they're good to go. These sites might eventually be taken down or added to the [Safe Browsing](https://safebrowsing.google.com/) blocklist, but they can still do some damage.
 
-This can result in people being less trusting of goverment websites, and some official communication being misunderstood as phishing attempts.
+This can result in people being less trusting of government websites, and some official communication being misunderstood as phishing attempts.
 
-In turn, government can be discouraged from communicating with their citizens through the open web, and try to find channels of communications that are deemed more trustworthy.
+In turn, governments can be discouraged from communicating with their citizens through the open web, and try to find channels of communications that are deemed more trustworthy.
 
 On the other hand, native mobile apps can sometimes provide more security.
 
@@ -61,8 +61,8 @@ Firefox already displays a padlock for websites using SSL properly, which is a g
 [insert 3 screenshots]
 
 Here's how it would work :
-- The browser would have a list of the different root domains used by national goverments
-- When browsing a website using one of these domains or a subdomain, and proper SSL, the browser would display the generic goverment icon instead of the padlock
+- The browser would have a list of the different root domains used by national governments
+- When browsing a website using one of these domains or a subdomain, and proper SSL, the browser would display the generic government icon instead of the padlock
 - By clicking on the icon, the usual menu would be displayed, with additionnal information about why this can be trusted as a government website.
 
 These screenshots are just a first draft of what this feature could look like. I think it could be interesting to have the `.gouv.fr` part of the url in bold in the detailed menu, and the wording could probably be tweaked.
