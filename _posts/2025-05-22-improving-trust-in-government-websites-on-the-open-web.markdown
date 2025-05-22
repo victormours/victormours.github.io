@@ -2,23 +2,25 @@
 layout: post
 title:  "Improving trust in government websites on the open Web"
 date:   2025-05-11 18:08:22 +0200
-categories: open source
+categories:
 ---
 
-Impersonating governments is unfortunately a common scam on the internet. Scammers might do it to get people to pay bogus fines, to get some sensitive information, or sometimes even to sell access to otherwise free public services.
+Impersonating governments is unfortunately a common scam on the internet. Scammers might do it to get people to pay bogus fines, get some sensitive personal information, or even to sell access to otherwise free public services.
 
-This can result in people being less trusting of goverment websites, while native apps can sometimes provide a better experience.
+It is currently a rather easy scam to run: all they need to do is to setup a website that re-uses the design system of the government they're imitating, host it with a somewhat offical-sounding domain name, and they're good to go. These sites might eventually be taken down or added to the [Safe Browsing](https://safebrowsing.google.com/) blocklist, but they can still do some damage.
+
+This can result in people being less trusting of goverment websites, and some official communication being misunderstood as phishing attempts.
+
+In turn, government can be discouraged from communicating with their citizens through the open web, and try to find channels of communications that are deemed more trustworthy.
+
+On the other hand, native mobile apps can sometimes provide more security.
 
 As an example, here's what it looks like to visit the website and the Play store pages for the French government service France Identités:
 [screenshots of web page and play store page]
 
-These screenshots are for an Android phone using Mozilla Firefox. Different phones ands browsers will have slight variations but I believe the core different between web pages and app stores will be the same.
+These screenshots are for an Android phone using Mozilla Firefox. Different phones and browsers will have slight variations but the main differences between web pages and app stores will be the same.
 
-It is true that the app store offers a more trustworthy interface for the end user: the app is labelled by Google as a government app, and the reviews on the app help making sure it's not a scam.
-
-On the web however, any scammer can use the French government's design system, and there is little additional information provided to authenticate the website.
-
-In turn, government can be discouraged from communicating with their citizens through the open web, and try to find channels of communications that are deemed more trustworthy, which could drive them to native apps rather than being on the open web.
+The app store does offer a more trustworthy interface for the end user: the app is labelled by Google as a government app, and the reviews on the app help making sure it's not a scam.
 
 I believe that it doesn't have to be this way, and that with a few simple design changes, we could make government websites and services easier to identify reliably on the open web, thus making them more trustworthy.
 
@@ -29,22 +31,21 @@ At this point, I should disclose that I do have a horse in this race, since I am
 ## URL conventions and limitations
 
 Most national governments tend to publish websites and services using subdomains of their main domain, which is usually in a format similar to `.gov.uk`.
-From a technical perspective, this is great because it is indeed very hard for scammers to spoof DNS. This URL pattern in cited as the best way to identify an official site on a page from the French government about spotting scammers(https://www.economie.gouv.fr/particuliers/faux-sites-administratifs).
+From a technical perspective, this is great because it is indeed very hard for scammers to spoof DNS. This URL pattern is even cited as the best way to identify an official site on a [page from the French government about spotting scammers](https://www.economie.gouv.fr/particuliers/faux-sites-administratifs).
 
-For citizens with some level of tech savyness, this provides a reliable way of identifying them. But this is not enough, since governments need to communicate to every citizen, not just tech savy ones.
-Let's face it, URLs are great for many things, but they're not easy to parse for humans.
-Let's take the example of https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams#section_1 : the most important part of this url, the `.gov.uk` is hidden in the middle, after all the dots and before the first forward slash.
+For citizens with some level of tech savyness, this provides a reliable way of identifying official websites. But this is not enough, since governments need to communicate to every citizen, not just tech savy ones. URLs are great for many things, but they're not easy to parse for most humans.
 
+Let's take the example of `https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams` : the most important part of this url, the `.gov.uk` is hidden in the middle, after all the dots and before the first forward slash.
 
-This doesn't make it easy to spot, as Tim Berners-Lee himself famously says so in his [FAQ on the World Wide Web Consortium website](https://www.w3.org/People/Berners-Lee/FAQ.html#etc) :
+This doesn't make it easy to spot, as Tim Berners-Lee himself famously says in his [FAQ on the World Wide Web Consortium website](https://www.w3.org/People/Berners-Lee/FAQ.html#etc) :
 
 > I have to say that now I regret that the syntax is so clumsy. I would like http://www.example.com/foo/bar/baz to be just written http:com/example/foo/bar/baz where the client would figure out that www.example.com existed and was the server to contact.
 
 
 This also makes things more complicated on mobile, when the screen isn't wide enough to display more than the subdomain:
 [screenshot of rendezvouspasseport.anct.gouv.fr]
-On this legitimate government website, it is impossible to know at first glance if it is a scam or not.
 
+On this legitimate government website, it is impossible to know at first glance if it is a scam or not.
 
 This doesn't mean that we should try to hide urls, but just like they do for SSL certificates, browsers could explain the URL by highlighting the key parts in them.
 
@@ -52,7 +53,7 @@ As an example, here's how Firefox displays the url of a government site on the d
 
 [desktop screenshot of rendezvouspasseport.anct.gouv.fr]
 
-Let's see what happens if we take that idea even further.
+How about we take this idea even further?
 
 ## Building upon URLs
 
