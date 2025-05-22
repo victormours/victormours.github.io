@@ -7,7 +7,7 @@ categories:
 
 Impersonating governments is unfortunately a common scam on the internet. Scammers might do it to get people to pay bogus fines, get some sensitive personal information, or even to sell access to otherwise free public services.
 
-It is currently a rather easy scam to run: all they need to do is to set up a website that re-uses the design system of the government they're imitating, host it with a somewhat offical-sounding domain name, and they're good to go. These sites might eventually be taken down or added to the [Safe Browsing](https://safebrowsing.google.com/) blocklist, but they can still do some damage.
+It is currently a rather easy scam to run: all they need to do is to set up a website that re-uses the design system of the government they're imitating, host it with a somewhat official-sounding domain name, and they're good to go. These sites might eventually be taken down or added to the [Safe Browsing](https://safebrowsing.google.com/) blocklist, but they can still do some damage.
 
 This can result in people being less trusting of government websites, and some official communication being misunderstood as phishing attempts.
 
@@ -15,12 +15,12 @@ In turn, governments can be discouraged from communicating with their citizens t
 
 On the other hand, native mobile apps can sometimes provide more security.
 
-As an example, here's what it looks like to visit the website and the Play store pages for the French government service France Identités:
+As an example, here's what the website and the Play store pages for the French government service France Identités look like:
 [screenshots of web page and play store page]
 
 These screenshots are for an Android phone using Mozilla Firefox. Different phones and browsers will have slight variations but the main differences between web pages and app stores will be the same.
 
-The app store does offer a more trustworthy interface for the end user: the app is labelled by Google as a government app, and the reviews on the app help making sure it's not a scam.
+The app store does offer a more trustworthy interface for the end user: the app is labelled by Google as a government app, and the reviews on the app help make sure it's not a scam.
 
 I believe that it doesn't have to be this way, and that with a few simple design changes, we could make government websites and services easier to identify reliably on the open web, thus making them more trustworthy.
 
@@ -33,7 +33,7 @@ At this point, I should disclose that I do have a horse in this race, since I am
 Most national governments tend to publish websites and services using subdomains of their main domain, which is usually in a format similar to `.gov.uk`.
 From a technical perspective, this is great because it is indeed very hard for scammers to spoof DNS. This URL pattern is even cited as the best way to identify an official site on a [page from the French government about spotting scammers](https://www.economie.gouv.fr/particuliers/faux-sites-administratifs).
 
-For citizens with some level of tech savyness, this provides a reliable way of identifying official websites. But this is not enough, since governments need to communicate to every citizen, not just tech savy ones. URLs are great for many things, but they're not easy to parse for most humans.
+For citizens with some level of tech savvyness, this provides a reliable way of identifying official websites. But this is not enough, since governments need to communicate to every citizen, not just tech savvy ones. URLs are great for many things, but they're not easy to parse for most humans.
 
 Let's take the example of `https://www.ncsc.gov.uk/collection/phishing-scams/spot-scams` : the most important part of this url, the `.gov.uk` is hidden in the middle, after all the dots and before the first forward slash.
 
@@ -63,11 +63,11 @@ Firefox already displays a padlock for websites using SSL properly, which is a g
 Here's how it would work :
 - The browser would have a list of the different root domains used by national governments
 - When browsing a website using one of these domains or a subdomain, and proper SSL, the browser would display the generic government icon instead of the padlock
-- By clicking on the icon, the usual menu would be displayed, with additionnal information about why this can be trusted as a government website.
+- By clicking on the icon, the usual menu would be displayed, with additional information about why this can be trusted as a government website.
 
 These screenshots are just a first draft of what this feature could look like. I think it could be interesting to have the `.gouv.fr` part of the url in bold in the detailed menu, and the wording could probably be tweaked.
 
-The nice part about this interface is that it explains rather than hides the complexity of the URL. It makes explicit the convention about gouvernment root domains, and hopefully it could even help people identify trustworthy government URLs outside of their browser address bar.
+The nice part about this interface is that it explains rather than hides the complexity of the URL. It makes explicit the convention about government root domains, and hopefully it could even help people identify trustworthy government URLs outside of their browser address bar.
 
 
 ## What's next?
