@@ -71,6 +71,6 @@ The nice part about this interface is that it explains rather than hides the com
 
 ## What's next?
 
-If you find this idea interesting, please feel free to participate in the conversation on the feature request for this on Mozilla Connect. I think that Mozilla Firefox is a great place to start implementing this, and then encourage other browsers to follow their lead.
+If you find this idea interesting, please feel free to participate in the conversation on this feature request on Mozilla Connect. I think that Mozilla Firefox is a great place to start implementing this, and then encourage other browsers to follow their lead.
 
-If you're curious to see how it could be implemented, you can check out a proof of concept here on Github.
+If you're curious to see how it could be implemented, you can check out [this proof of concept](https://github.com/mozilla-firefox/firefox/compare/main...victormours:firefox:government) on Github.
