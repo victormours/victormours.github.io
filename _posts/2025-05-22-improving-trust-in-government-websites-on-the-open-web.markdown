@@ -49,7 +49,7 @@ On this legitimate government website, it is impossible to know at first glance 
 
 This doesn't mean that we should try to hide urls, but just like they do for SSL certificates, browsers could explain the URL by highlighting the key parts in them.
 
-As an example, here's how Firefox displays the url of a government site on the desktop :
+As an example, here's how Firefox displays the url of a government site on the desktop:
 
 [desktop screenshot of rendezvouspasseport.anct.gouv.fr]
 
@@ -57,7 +57,7 @@ How about we take this idea even further?
 
 ## Building upon URLs
 
-Firefox already displays a padlock for websites using SSL properly, which is a good thing, but we could take it even further :
+Firefox already displays a padlock for websites using SSL properly, which is a good thing, but here's what going the extra mile could look like:
 [insert 3 screenshots]
 
 Here's how it would work :
@@ -75,3 +75,11 @@ The nice part about this interface is that it explains rather than hides the com
 If you find this idea interesting, please feel free to participate in the conversation on this feature request on Mozilla Connect. I think that Mozilla Firefox is a great place to start implementing this, and then encourage other browsers to follow their lead.
 
 If you're curious to see how it could be implemented, you can check out [this proof of concept](https://github.com/mozilla-firefox/firefox/compare/main...victormours:firefox:government) on Github.
+
+
+## Additional notes
+
+- The US government has added this banner on top of most of their official websites:
+[screenshot of the banner]
+- There are quite a few government websites that don't follow the .gov.tld convention, so there will be quite a few "false negatives" with this system, meaning official government websites that won't be flagged as such. These websites should still be displayed normally, and maybe the text for recognized website should aknowledge that not all websites will be properly tagged. For this kind of issue, it's better to have false negatives rather than false positives.
+- I've started building a list of government domains, and there are a few edge cases, but I think it's still worth improving the experience of the overwhelming majority of citizens around the world.
