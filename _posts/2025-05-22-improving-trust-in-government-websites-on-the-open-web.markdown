@@ -58,7 +58,7 @@ How about we take this idea even further?
 ## Building upon URLs
 
 Firefox already displays a padlock for websites using SSL properly, which is a good thing, but here's what going the extra mile could look like:
-[insert 3 screenshots]
+[insert 2 screenshots]
 
 Here's how it would work :
 - The browser would have a list of the different root domains used by national governments
